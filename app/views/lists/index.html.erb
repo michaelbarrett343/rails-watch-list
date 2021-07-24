@@ -12,6 +12,7 @@
     <div class="card">
       <div class="card__image">
       <div class="card__image card__image--movie_time">
+      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
       <div class="card__content">
         <div class="card__title"><%= list.name %></div>
