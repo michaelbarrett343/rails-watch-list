@@ -105,7 +105,7 @@ img {
 
 
 .card__image--movie_time{
-  background-image: url('<%= cl_image_path @lists.photo.key, height: 300, crop: :fill %>');
+  background-image: url('<%= cl_image_path, @list.photo.key, height: 300, crop: :fill %>');
 }
 
 .card__title {
