@@ -11,6 +11,19 @@
   </head>
 
   <body>
+  <div class="d-flex justify-content-between p-2 align-items-center">
+  <div class="d-flex">
+    <%= image_tag "cinema icon.png", alt: "movie icon", width: 50 %>
+  </div>
+  <div class="nav_btn d-flex">
+    <div class="text-muted">
+      <%= link_to  "Home", root_path(@list), class:"home" %>
+    </div>
+    <div>
+      <%= link_to  "New lists", "lists/new", class:"new"%>
+    </div>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
