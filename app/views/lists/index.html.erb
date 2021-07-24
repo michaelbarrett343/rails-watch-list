@@ -10,7 +10,7 @@
   <% @lists.each do |list| %>
     <li class="cards__item">
     <div class="card">
-      <div class="card__image card__image--movie_time"></div>
+      <div class="card__image"> <%= cl_image_path @list.photo.key%> </div>
       <div class="card__content">
         <div class="card__title"><%= list.name %></div>
         <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare sapien at condimentum aliquam. Maecenas sit amet diam ligula. Quisque commodo justo eget nulla ullamcorper ultricies. Nulla sed turpis viverra, efficitur sem ac, cursus tortor. Fusce maximus, lectus non mattis porta, urna lorem consequat tellus</p>

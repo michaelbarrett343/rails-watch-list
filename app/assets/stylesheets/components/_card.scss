@@ -103,11 +103,6 @@ img {
   }
 }
 
-
-.card__image--movie_time{
-  background-image: url('<%= cl_image_path, @list.photo.key, height: 300, crop: :fill %>');
-}
-
 .card__title {
   color: #696969;
   font-size: 1.25rem;
