@@ -105,7 +105,7 @@ img {
 
 
 .card__image--movie_time{
-  background-image: url(https://st2.depositphotos.com/4881653/11118/v/950/depositphotos_111188314-stock-illustration-movie-time-poster-cartoon-vector.jpg);
+  background-image: url('<%= cl_image_path @article.photo.key, height: 300, crop: :fill %>');
 }
 
 .card__title {
